@@ -58,6 +58,8 @@ export function MultiStepForm() {
   const [contactPhone, setContactPhone] = useState("");
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   async function lookupCUI() {
     const cuiClean = cui.replace(/\D/g, "");
@@ -116,8 +118,47 @@ export function MultiStepForm() {
     return contactName.trim() !== "" && contactEmail.trim() !== "" && contactPhone.trim() !== "";
   }
 
-  function handleSubmit() {
-    setSubmitted(true);
+  async function handleSubmit() {
+    setSubmitting(true);
+    setSubmitError("");
+
+    const turnoverValue = latestFinancial
+      ? formatNumber(getIndicator(latestFinancial.indicators, "I13"))
+      : "N/A";
+    const employeesValue = latestFinancial
+      ? getIndicator(latestFinancial.indicators, "I20")
+      : 0;
+
+    try {
+      const res = await fetch("/api/submit-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contactName,
+          contactEmail,
+          contactPhone,
+          cui: String(company?.cui || ""),
+          companyName: company?.name || "",
+          caenCode: company?.caenCode || "",
+          caenEligible: isEligibleCaen === true,
+          replacesEquipment,
+          hasEnergyAudit,
+          address: company?.address || "",
+          turnover: turnoverValue + " RON",
+          employees: employeesValue,
+        }),
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setSubmitError(result.error || "Eroare la trimitere. Incercati din nou.");
+      }
+    } catch {
+      setSubmitError("Eroare de conexiune. Incercati din nou.");
+    }
+    setSubmitting(false);
   }
 
   const latestFinancial = financials.length > 0
@@ -505,6 +546,12 @@ export function MultiStepForm() {
             </div>
           </div>
 
+          {submitError && (
+            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mt-6 text-sm">
+              {submitError}
+            </div>
+          )}
+
           <div className="flex justify-between mt-8">
             <button
               onClick={() => setStep(2)}
@@ -514,10 +561,10 @@ export function MultiStepForm() {
             </button>
             <button
               onClick={handleSubmit}
-              disabled={!canSubmit()}
+              disabled={!canSubmit() || submitting}
               className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              Trimite Solicitarea
+              {submitting ? "Se trimite..." : "Trimite Solicitarea"}
             </button>
           </div>
         </div>
