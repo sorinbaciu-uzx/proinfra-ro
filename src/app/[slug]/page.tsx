@@ -76,6 +76,7 @@ export default async function DomainPage({
         title={domain.heroTitle}
         highlight={domain.heroHighlight}
         description={domain.heroDescription}
+        slug={domain.slug}
       />
 
       <Stats />

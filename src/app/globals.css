@@ -25,3 +25,84 @@ html {
 details summary::-webkit-details-marker {
   display: none;
 }
+
+/* ── Domain illustration animations ── */
+@keyframes excavator-arm { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-12deg); } }
+@keyframes excavator-bucket { 0%, 100% { transform: rotate(0deg); } 40% { transform: rotate(15deg); } 60% { transform: rotate(-5deg); } }
+@keyframes particle-float { 0% { opacity: 0; transform: translate(0, 0); } 50% { opacity: 0.7; } 100% { opacity: 0; transform: translate(-15px, -30px); } }
+@keyframes fall-down { 0% { opacity: 0; transform: translateY(-20px); } 50% { opacity: 0.8; } 100% { opacity: 0; transform: translateY(60px); } }
+@keyframes flame-dance { 0%, 100% { transform: scaleY(1) scaleX(1); } 50% { transform: scaleY(1.3) scaleX(0.9); } }
+@keyframes smoke-rise { 0% { opacity: 0.3; transform: translateY(0) scale(1); } 100% { opacity: 0; transform: translateY(-25px) scale(1.5); } }
+@keyframes arc-flash { 0%, 100% { opacity: 0.2; } 30% { opacity: 1; } 50% { opacity: 0.1; } 70% { opacity: 0.9; } }
+@keyframes glow-pulse { 0%, 100% { opacity: 0.1; transform: scale(1); } 50% { opacity: 0.3; transform: scale(1.4); } }
+@keyframes rise-up { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: 0.7; } 100% { opacity: 0; transform: translateY(-80px); } }
+@keyframes heat-pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.7; } }
+@keyframes vibrate-line { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(3px); } 75% { transform: translateX(-3px); } }
+@keyframes paver-appear { 0% { opacity: 0; transform: translateX(30px); } 100% { opacity: 1; transform: translateX(0); } }
+@keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes spin-reverse { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+@keyframes pour-concrete { 0%, 100% { opacity: 0.3; height: 20px; } 50% { opacity: 0.8; height: 50px; } }
+@keyframes trowel-spread { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-20deg); } }
+@keyframes spread-mortar { 0% { width: 40px; opacity: 0.3; } 100% { width: 100px; opacity: 0.6; } }
+@keyframes shimmer-move { 0% { transform: translateX(-40px); opacity: 0; } 50% { opacity: 0.08; } 100% { transform: translateX(180px); opacity: 0; } }
+@keyframes spark-fly { 0% { opacity: 1; transform: translate(0, 0); } 100% { opacity: 0; transform: translate(var(--sx, 10px), var(--sy, -20px)); } }
+@keyframes draw-move { 0% { stroke-dashoffset: 30; } 100% { stroke-dashoffset: 0; } }
+@keyframes arrow-pulse { 0%, 100% { opacity: 0.4; transform: translateX(0); } 50% { opacity: 1; transform: translateX(5px); } }
+@keyframes strip-flow { 0% { stroke-dashoffset: 20; } 100% { stroke-dashoffset: 0; } }
+@keyframes form-profile { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+@keyframes wire-pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
+@keyframes weld-flash { 0%, 100% { opacity: 0.2; r: 5; } 30% { opacity: 0.9; r: 12; } 60% { opacity: 0.1; r: 4; } 80% { opacity: 0.7; r: 10; } }
+@keyframes current-flow { from { stroke-dashoffset: 50; } to { stroke-dashoffset: 0; } }
+@keyframes pulse-travel { 0% { opacity: 0; transform: scale(0.5); } 50% { opacity: 0.8; transform: scale(1.2); } 100% { opacity: 0; transform: scale(0.5); } }
+@keyframes tipper-up { 0%, 70%, 100% { transform: rotate(0deg); } 30% { transform: rotate(-25deg); } }
+@keyframes conveyor-arrow { 0%, 100% { transform: translateX(0); opacity: 0.5; } 50% { transform: translateX(8px); opacity: 1; } }
+
+.anim-excavator-arm { animation: excavator-arm 3s ease-in-out infinite; }
+.anim-excavator-bucket { animation: excavator-bucket 3s ease-in-out infinite; }
+.anim-particle-1 { animation: particle-float 2s ease-out infinite; }
+.anim-particle-2 { animation: particle-float 2.5s ease-out infinite 0.3s; }
+.anim-particle-3 { animation: particle-float 2.2s ease-out infinite 0.6s; }
+.anim-tipper { animation: tipper-up 4s ease-in-out infinite; }
+.anim-fall-1 { animation: fall-down 2s ease-in infinite 0.2s; }
+.anim-fall-2 { animation: fall-down 2.3s ease-in infinite 0.5s; }
+.anim-fall-3 { animation: fall-down 2.1s ease-in infinite 0.8s; }
+.anim-flame-1 { animation: flame-dance 0.8s ease-in-out infinite; transform-origin: bottom; }
+.anim-flame-2 { animation: flame-dance 1s ease-in-out infinite 0.2s; transform-origin: bottom; }
+.anim-flame-3 { animation: flame-dance 0.9s ease-in-out infinite 0.4s; transform-origin: bottom; }
+.anim-smoke-1 { animation: smoke-rise 3s ease-out infinite; }
+.anim-smoke-2 { animation: smoke-rise 3.5s ease-out infinite 0.5s; }
+.anim-arc { animation: arc-flash 0.5s ease-in-out infinite; }
+.anim-glow { animation: glow-pulse 2s ease-in-out infinite; }
+.anim-rise-1 { animation: rise-up 3s ease-out infinite; }
+.anim-rise-2 { animation: rise-up 3.5s ease-out infinite 0.5s; }
+.anim-rise-3 { animation: rise-up 2.8s ease-out infinite 1s; }
+.anim-rise-4 { animation: rise-up 3.2s ease-out infinite 1.5s; }
+.anim-heat { animation: heat-pulse 2s ease-in-out infinite; }
+.anim-vibrate { animation: vibrate-line 0.15s ease-in-out infinite; }
+.anim-paver-1 { animation: paver-appear 3s ease-out infinite; }
+.anim-paver-2 { animation: paver-appear 3s ease-out infinite 0.5s; }
+.anim-paver-3 { animation: paver-appear 3s ease-out infinite 1s; }
+.anim-paver-4 { animation: paver-appear 3s ease-out infinite 1.5s; }
+.anim-spin-drum { animation: spin-slow 4s linear infinite; }
+.anim-spin-disc { animation: spin-slow 2s linear infinite; }
+.anim-pour { animation: pour-concrete 3s ease-in-out infinite; }
+.anim-trowel { animation: trowel-spread 2s ease-in-out infinite; }
+.anim-spread { animation: spread-mortar 3s ease-out infinite; }
+.anim-shimmer { animation: shimmer-move 4s ease-in-out infinite; }
+.anim-spark-1 { animation: spark-fly 0.8s ease-out infinite; --sx: 12px; --sy: -18px; }
+.anim-spark-2 { animation: spark-fly 0.9s ease-out infinite 0.15s; --sx: -8px; --sy: -22px; }
+.anim-spark-3 { animation: spark-fly 0.7s ease-out infinite 0.3s; --sx: 15px; --sy: -15px; }
+.anim-draw-bar { animation: strip-flow 2s linear infinite; stroke-dasharray: 15 10; }
+.anim-arrow-move { animation: arrow-pulse 1.5s ease-in-out infinite; }
+.anim-roll-top { animation: spin-slow 3s linear infinite; }
+.anim-roll-bottom { animation: spin-reverse 3s linear infinite; }
+.anim-strip { animation: wire-pulse 2s ease-in-out infinite; }
+.anim-form-profile { animation: form-profile 3s ease-in-out infinite; }
+.anim-wire { animation: wire-pulse 2s ease-in-out infinite; }
+.anim-spool { animation: spin-slow 3s linear infinite; }
+.anim-conveyor { animation: conveyor-arrow 1.5s ease-in-out infinite; }
+.anim-weld { animation: weld-flash 1s ease-in-out infinite; }
+.anim-current { animation: current-flow 1.5s linear infinite; }
+.anim-pulse-1 { animation: pulse-travel 2s ease-in-out infinite; }
+.anim-pulse-2 { animation: pulse-travel 2s ease-in-out infinite 0.6s; }
+.anim-pulse-3 { animation: pulse-travel 2s ease-in-out infinite 1.2s; }
