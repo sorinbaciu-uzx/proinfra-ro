@@ -1,0 +1,70 @@
+# proinfra.ro - PRO INFRA Program Information
+
+> PRO INFRA este un program de finantare cu fonduri europene nerambursabile destinat companiilor din Romania care activeaza in industria materialelor de constructii si infrastructura.
+
+## Informatii Cheie
+- Finantare: 100% nerambursabila
+- Valoare maxima: peste 200.000 EUR per proiect
+- Perioada de implementare: pana la 36 de luni
+- Dobanda: 0%
+- Tara: Romania
+- Sursa fonduri: Fonduri europene
+
+## Domenii de Activitate Eligibile (17 domenii)
+1. Extractia pietrei ornamentale si a pietrei pentru constructii
+2. Extractia pietrisului si nisipului, extractia argilei si caolinului
+3. Fabricarea de produse refractare
+4. Fabricarea de izolatori electrici si piese izolante din ceramica
+5. Fabricarea varului si ipsosului
+6. Fabricarea produselor din beton pentru constructii
+7. Fabricarea betonului
+8. Fabricarea mortarului
+9. Fabricarea altor articole din beton, ciment si ipsos
+10. Taierea, fasonarea si finisarea pietrei
+11. Fabricarea altor produse din minerale nemetalice
+12. Tragerea la rece a barelor
+13. Laminarea la rece a benzilor inguste
+14. Productia de profile obtinute la rece
+15. Trefilarea firelor la rece
+16. Fabricarea de constructii metalice si parti componente ale structurilor metalice
+17. Fabricarea altor fire si cabluri electrice si electronice
+
+## Criterii de Eligibilitate
+- Companii inregistrate in Romania cu activitate in domeniile eligibile
+- Minimum 1 an de activitate de la inregistrare
+- Minimum 3 angajati cu contract pe perioada nedeterminata
+- Cifra de afaceri minima conform ghidului solicitantului
+- Fara datorii restante la bugetul de stat
+- Sa nu se afle in insolventa, faliment sau lichidare
+
+## Investitii Eligibile
+- Echipamente noi de productie si prelucrare
+- Utilaje si instalatii industriale
+- Echipamente de laborator si control al calitatii
+- Software de gestiune si automatizare
+- Sisteme de protectia mediului
+
+## Contact
+- Website: https://proinfra.ro
+- Email: contact@proinfra.ro
+- Telefon: +40 700 000 000
+
+## Pagini Disponibile
+- Homepage: https://proinfra.ro
+- Extractia pietrei ornamentale: https://proinfra.ro/extractia-pietrei-ornamentale
+- Extractia pietrisului si nisipului: https://proinfra.ro/extractia-pietrisului-nisipului
+- Fabricarea produselor refractare: https://proinfra.ro/fabricarea-produselor-refractare
+- Fabricarea izolatorilor ceramici: https://proinfra.ro/fabricarea-izolatorilor-ceramici
+- Fabricarea varului si ipsosului: https://proinfra.ro/fabricarea-varului-ipsosului
+- Fabricarea produselor din beton: https://proinfra.ro/fabricarea-produselor-beton-constructii
+- Fabricarea betonului: https://proinfra.ro/fabricarea-betonului
+- Fabricarea mortarului: https://proinfra.ro/fabricarea-mortarului
+- Articole din beton, ciment si ipsos: https://proinfra.ro/fabricarea-articolelor-beton-ciment-ipsos
+- Taierea si finisarea pietrei: https://proinfra.ro/taierea-fasonarea-finisarea-pietrei
+- Produse din minerale nemetalice: https://proinfra.ro/fabricarea-produselor-minerale-nemetalice
+- Tragerea la rece a barelor: https://proinfra.ro/tragerea-la-rece-a-barelor
+- Laminarea la rece a benzilor: https://proinfra.ro/laminarea-la-rece-a-benzilor-inguste
+- Productia de profile la rece: https://proinfra.ro/productia-de-profile-la-rece
+- Trefilarea firelor la rece: https://proinfra.ro/trefilarea-firelor-la-rece
+- Fabricarea constructiilor metalice: https://proinfra.ro/fabricarea-constructiilor-metalice
+- Fabricarea firelor si cablurilor: https://proinfra.ro/fabricarea-firelor-cablurilor-electrice
