@@ -4,11 +4,14 @@
 
 ## Informatii Cheie
 - Finantare: 100% nerambursabila
-- Valoare maxima: peste 200.000 EUR per proiect
-- Perioada de implementare: pana la 36 de luni
+- Valoare maxima: 15.000.000 EUR per beneficiar
+- Perioada de implementare: pana la 30.06.2030
+- Buget total schema: 200.000.000 EUR
+- Numar maxim beneficiari: 80
+- Administrator: Ministerul Transporturilor si Infrastructurii
+- Sursa fonduri: Fondul pentru Modernizare
 - Dobanda: 0%
 - Tara: Romania
-- Sursa fonduri: Fonduri europene
 
 ## Domenii de Activitate Eligibile (17 domenii)
 1. Extractia pietrei ornamentale si a pietrei pentru constructii
@@ -46,8 +49,9 @@
 
 ## Contact
 - Website: https://proinfra.ro
-- Email: contact@proinfra.ro
-- Telefon: +40 700 000 000
+- Operator: CAPCAUN SRL
+- Email: sorin.baciu@proinfra.ro
+- Telefon: 0769081081
 
 ## Pagini Disponibile
 - Homepage: https://proinfra.ro

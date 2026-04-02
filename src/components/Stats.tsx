@@ -1,7 +1,7 @@
 const stats = [
   { value: "100%", label: "Finantare Nerambursabila" },
-  { value: "200K+", label: "Valoare Maxima (EUR)" },
-  { value: "36", label: "Luni Implementare" },
+  { value: "15M", label: "Valoare Maxima per Beneficiar (EUR)" },
+  { value: "200M", label: "Buget Total Schema (EUR)" },
   { value: "0%", label: "Dobanda la Finantare" },
 ];
 

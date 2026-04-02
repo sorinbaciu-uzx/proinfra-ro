@@ -9,9 +9,9 @@ export function generateOrganizationJsonLd() {
     description: "Consultanta specializata pentru accesarea fondurilor nerambursabile prin programul PRO INFRA pentru industria materialelor de constructii si infrastructura din Romania.",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+40700000000",
+      telephone: "+40769081081",
       contactType: "customer service",
-      email: "contact@proinfra.ro",
+      email: "sorin.baciu@proinfra.ro",
       availableLanguage: "Romanian",
     },
     areaServed: {

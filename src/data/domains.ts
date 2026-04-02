@@ -30,14 +30,18 @@ export interface DomainData {
 
 export const SITE_URL = "https://proinfra.ro";
 export const SITE_NAME = "PRO INFRA";
-export const SITE_DESCRIPTION = "Consultanta specializata pentru accesarea fondurilor nerambursabile prin programul PRO INFRA. Finantare 100% nerambursabila pentru industria materialelor de constructii si infrastructura din Romania.";
+export const SITE_DESCRIPTION = "Consultanta specializata pentru accesarea fondurilor nerambursabile prin programul PRO INFRA. Finantare 100% nerambursabila de pana la 15 milioane EUR pentru industria materialelor de constructii si infrastructura din Romania.";
+export const COMPANY_NAME = "CAPCAUN SRL";
+export const COMPANY_CUI = "RO12345678";
+export const COMPANY_PHONE = "0769081081";
+export const COMPANY_EMAIL = "sorin.baciu@proinfra.ro";
 
 export const domains: DomainData[] = [
   {
     slug: "extractia-pietrei-ornamentale",
     title: "Extractia Pietrei Ornamentale si de Constructii",
     metaTitle: "PRO INFRA | Finantare pentru Extractia Pietrei Ornamentale si de Constructii",
-    metaDescription: "Programul PRO INFRA ofera finantare 100% nerambursabila pentru extractia pietrei ornamentale si a pietrei pentru constructii. Modernizeaza-ti cariera de piatra cu pana la 200.000 EUR fonduri europene. Consultanta gratuita.",
+    metaDescription: "Programul PRO INFRA ofera finantare 100% nerambursabila pentru extractia pietrei ornamentale si a pietrei pentru constructii. Modernizeaza-ti cariera de piatra cu pana la 15 milioane EUR fonduri europene. Consultanta gratuita.",
     keywords: ["PRO INFRA", "extractia pietrei ornamentale", "piatra pentru constructii", "finantare extractie piatra", "fonduri europene piatra", "modernizare cariera piatra", "program PRO INFRA", "piatra naturala"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Extractia Pietrei Ornamentale si de Constructii",
@@ -96,7 +100,7 @@ export const domains: DomainData[] = [
     slug: "extractia-pietrisului-nisipului",
     title: "Extractia Pietrisului, Nisipului, Argilei si Caolinului",
     metaTitle: "PRO INFRA | Finantare pentru Extractia Pietrisului, Nisipului, Argilei si Caolinului",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru modernizarea balastierelor si exploatarilor de argila si caolin. Echipamente de extractie, sortare, spalare — pana la 200.000 EUR fonduri europene.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru modernizarea balastierelor si exploatarilor de argila si caolin. Echipamente de extractie, sortare, spalare — pana la 15 milioane EUR fonduri europene.",
     keywords: ["PRO INFRA", "extractia pietrisului", "extractia nisipului", "argila", "caolin", "finantare balastiera", "fonduri europene agregate", "modernizare balastiera"],
     heroTitle: "Finantare pentru",
     heroHighlight: "Extractia Pietrisului, Nisipului, Argilei si Caolinului",
@@ -154,7 +158,7 @@ export const domains: DomainData[] = [
     slug: "fabricarea-produselor-refractare",
     title: "Fabricarea Produselor Refractare",
     metaTitle: "PRO INFRA | Finantare pentru Fabricarea Produselor Refractare",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru fabricarea produselor refractare. Cuptoare performante, prese de formare, sisteme de control — pana la 200.000 EUR fonduri europene.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru fabricarea produselor refractare. Cuptoare performante, prese de formare, sisteme de control — pana la 15 milioane EUR fonduri europene.",
     keywords: ["PRO INFRA", "produse refractare", "fabricare refractare", "caramizi refractare", "betoane refractare", "fonduri europene refractare", "finantare refractare"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Fabricarea Produselor Refractare",
@@ -241,7 +245,7 @@ export const domains: DomainData[] = [
     slug: "fabricarea-varului-ipsosului",
     title: "Fabricarea Varului si Ipsosului",
     metaTitle: "PRO INFRA | Finantare pentru Fabricarea Varului si Ipsosului",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru fabricarea varului si ipsosului. Cuptoare de var moderne, linii de productie ipsos, echipamente de ambalare — pana la 200.000 EUR.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru fabricarea varului si ipsosului. Cuptoare de var moderne, linii de productie ipsos, echipamente de ambalare — pana la 15 milioane EUR.",
     keywords: ["PRO INFRA", "fabricare var", "fabricare ipsos", "cuptoare de var", "finantare var ipsos", "fonduri europene var", "productie var industrial"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Fabricarea Varului si Ipsosului",
@@ -317,7 +321,7 @@ export const domains: DomainData[] = [
     slug: "fabricarea-betonului",
     title: "Fabricarea Betonului",
     metaTitle: "PRO INFRA | Finantare pentru Fabricarea Betonului",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru statii de betoane. Dozare automata, malaxoare performante, autobetoniere, pompe de beton — pana la 200.000 EUR fonduri europene.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru statii de betoane. Dozare automata, malaxoare performante, autobetoniere, pompe de beton — pana la 15 milioane EUR fonduri europene.",
     keywords: ["PRO INFRA", "fabricare beton", "statie betoane", "finantare statie betoane", "beton marfa", "fonduri europene beton", "modernizare statie betoane"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Fabricarea Betonului",
@@ -393,7 +397,7 @@ export const domains: DomainData[] = [
     slug: "fabricarea-articolelor-beton-ciment-ipsos",
     title: "Fabricarea Altor Articole din Beton, Ciment si Ipsos",
     metaTitle: "PRO INFRA | Finantare pentru Fabricarea Articolelor din Beton, Ciment si Ipsos",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru articole din beton, ciment si ipsos. Elemente decorative, mobilier urban, panouri 3D ipsos, camine vizitare — pana la 200.000 EUR.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru articole din beton, ciment si ipsos. Elemente decorative, mobilier urban, panouri 3D ipsos, camine vizitare — pana la 15 milioane EUR.",
     keywords: ["PRO INFRA", "articole beton", "articole ciment", "articole ipsos", "gips carton", "elemente decorative beton", "mobilier urban beton"],
     heroTitle: "Finantare pentru",
     heroHighlight: "Fabricarea Articolelor din Beton, Ciment si Ipsos",
@@ -469,7 +473,7 @@ export const domains: DomainData[] = [
     slug: "fabricarea-produselor-minerale-nemetalice",
     title: "Fabricarea Altor Produse din Minerale Nemetalice",
     metaTitle: "PRO INFRA | Finantare pentru Fabricarea Produselor din Minerale Nemetalice",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru produse din minerale nemetalice. Abrazive, materiale de frecare, fibre minerale, produse din mica si grafit — pana la 200.000 EUR.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru produse din minerale nemetalice. Abrazive, materiale de frecare, fibre minerale, produse din mica si grafit — pana la 15 milioane EUR.",
     keywords: ["PRO INFRA", "minerale nemetalice", "abrazive", "materiale frecare", "fibre minerale", "finantare minerale nemetalice", "fonduri europene"],
     heroTitle: "Finantare pentru",
     heroHighlight: "Fabricarea Produselor din Minerale Nemetalice",
@@ -507,7 +511,7 @@ export const domains: DomainData[] = [
     slug: "tragerea-la-rece-a-barelor",
     title: "Tragerea la Rece a Barelor",
     metaTitle: "PRO INFRA | Finantare pentru Tragerea la Rece a Barelor",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru tragerea la rece a barelor de otel si metale neferoase. Bancuri de tragere, filiere de precizie, control dimensional — pana la 200.000 EUR.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru tragerea la rece a barelor de otel si metale neferoase. Bancuri de tragere, filiere de precizie, control dimensional — pana la 15 milioane EUR.",
     keywords: ["PRO INFRA", "tragere la rece", "bare trase", "bare calibrate", "otel tras", "finantare tragere bare", "fonduri europene metalurgie"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Tragerea la Rece a Barelor",
@@ -545,7 +549,7 @@ export const domains: DomainData[] = [
     slug: "laminarea-la-rece-a-benzilor-inguste",
     title: "Laminarea la Rece a Benzilor Inguste",
     metaTitle: "PRO INFRA | Finantare pentru Laminarea la Rece a Benzilor Inguste",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru laminarea la rece a benzilor inguste. Laminoare de precizie, control automat grosime, cuptoare de recoacere — pana la 200.000 EUR.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru laminarea la rece a benzilor inguste. Laminoare de precizie, control automat grosime, cuptoare de recoacere — pana la 15 milioane EUR.",
     keywords: ["PRO INFRA", "laminare la rece", "benzi inguste", "benzi otel", "laminor", "finantare laminare", "fonduri europene metalurgie"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Laminarea la Rece a Benzilor Inguste",
@@ -583,7 +587,7 @@ export const domains: DomainData[] = [
     slug: "productia-de-profile-la-rece",
     title: "Productia de Profile Obtinute la Rece",
     metaTitle: "PRO INFRA | Finantare pentru Productia de Profile Obtinute la Rece",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru productia de profile metalice formate la rece. Profile C, Z, U, omega, linii de profilare — pana la 200.000 EUR fonduri europene.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru productia de profile metalice formate la rece. Profile C, Z, U, omega, linii de profilare — pana la 15 milioane EUR fonduri europene.",
     keywords: ["PRO INFRA", "profile la rece", "profile metalice", "profile C Z U", "profilare", "linie profilare", "finantare profile", "fonduri europene profile"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Productia de Profile Obtinute la Rece",
@@ -621,7 +625,7 @@ export const domains: DomainData[] = [
     slug: "trefilarea-firelor-la-rece",
     title: "Trefilarea Firelor la Rece",
     metaTitle: "PRO INFRA | Finantare pentru Trefilarea Firelor la Rece",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru trefilarea firelor la rece. Bancuri de trefilare, linii de zincare, masini plasa sudata, masini cuie — pana la 200.000 EUR.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru trefilarea firelor la rece. Bancuri de trefilare, linii de zincare, masini plasa sudata, masini cuie — pana la 15 milioane EUR.",
     keywords: ["PRO INFRA", "trefilare fire", "sarma trefilata", "trefilare la rece", "plasa sudata", "finantare trefilare", "fonduri europene sarma"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Trefilarea Firelor la Rece",
@@ -697,7 +701,7 @@ export const domains: DomainData[] = [
     slug: "fabricarea-firelor-cablurilor-electrice",
     title: "Fabricarea Altor Fire si Cabluri Electrice si Electronice",
     metaTitle: "PRO INFRA | Finantare pentru Fabricarea Firelor si Cablurilor Electrice si Electronice",
-    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru fabricarea firelor si cablurilor electrice. Linii de extrudare, masini de cablare, echipamente de testare electrica — pana la 200.000 EUR.",
+    metaDescription: "Finantare 100% nerambursabila PRO INFRA pentru fabricarea firelor si cablurilor electrice. Linii de extrudare, masini de cablare, echipamente de testare electrica — pana la 15 milioane EUR.",
     keywords: ["PRO INFRA", "fire electrice", "cabluri electrice", "cabluri electronice", "fabricare cabluri", "finantare cabluri", "fonduri europene cabluri"],
     heroTitle: "Finantare Nerambursabila pentru",
     heroHighlight: "Fabricarea Firelor si Cablurilor Electrice si Electronice",

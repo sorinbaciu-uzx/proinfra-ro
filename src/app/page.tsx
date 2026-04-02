@@ -5,6 +5,7 @@ import { generateHomePageJsonLd } from "@/lib/structured-data";
 import { Stats } from "@/components/Stats";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { CTA } from "@/components/CTA";
+import { Authority } from "@/components/Authority";
 
 export default function HomePage() {
   return (
@@ -19,7 +20,7 @@ export default function HomePage() {
             Finantare <span className="text-blue-500">100% Nerambursabila</span> pentru Industria Materialelor de Constructii si Infrastructura
           </h1>
           <p className="text-lg text-slate-400 max-w-2xl mb-9">
-            Programul PRO INFRA ofera fonduri europene nerambursabile pentru modernizarea echipamentelor, cresterea capacitatii de productie si digitalizarea proceselor in 17 domenii de activitate eligibile.
+            Programul PRO INFRA ofera finantare 100% nerambursabila de pana la 15 milioane EUR per beneficiar, din Fondul pentru Modernizare, pentru modernizarea echipamentelor si cresterea eficientei energetice in 17 domenii de activitate eligibile.
           </p>
           <Link
             href="#domenii"
@@ -43,7 +44,7 @@ export default function HomePage() {
                 PRO INFRA este un program de finantare cu fonduri europene nerambursabile destinat companiilor din Romania care activeaza in industria materialelor de constructii si infrastructura. Programul acopera 17 domenii de activitate eligibile, de la extractia pietrei si fabricarea betonului la productia de constructii metalice si cabluri electrice.
               </p>
               <p className="text-slate-500">
-                Finantarea este 100% nerambursabila — companiile beneficiare nu trebuie sa returneze fondurile primite. Valoarea maxima a finantarii poate ajunge la peste 200.000 EUR per proiect, cu o perioada de implementare de pana la 36 de luni.
+                Finantarea este 100% nerambursabila — companiile beneficiare nu trebuie sa returneze fondurile primite. Valoarea maxima a finantarii poate ajunge la 15 milioane EUR per beneficiar, cu implementare pana la 30.06.2030. Schema este administrata de Ministerul Transporturilor si Infrastructurii si finantata din Fondul pentru Modernizare.
               </p>
             </div>
             <div>
@@ -102,6 +103,8 @@ export default function HomePage() {
       </section>
 
       <ProcessSteps />
+
+      <Authority />
 
       <CTA
         title="Acceseaza finantare PRO INFRA pentru compania ta"
