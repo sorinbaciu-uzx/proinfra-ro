@@ -37,15 +37,16 @@ export async function POST(request: Request) {
     );
   }
 
+  // Status columns use index: 1=Done(green)=Da, 2=Stuck(red)=Nu
   const columnValues = JSON.stringify({
     text_mm219a1p: data.cui,
     text_mm21580t: data.companyName,
     text_mm21mmps: data.caenCode,
-    color_mm21y2na: { label: data.caenEligible ? "Da" : "Nu" },
-    email_mm21mdpr: data.contactEmail,
-    phone_mm216y3x: data.contactPhone,
-    color_mm21tgyp: { label: data.replacesEquipment === "da" ? "Da" : "Nu" },
-    color_mm21k4cw: { label: data.hasEnergyAudit === "da" ? "Da" : "Nu" },
+    color_mm21y2na: { index: data.caenEligible ? 1 : 2 },
+    email_mm21mdpr: { email: data.contactEmail, text: data.contactEmail },
+    phone_mm216y3x: { phone: data.contactPhone, countryShortName: "RO" },
+    color_mm21tgyp: { index: data.replacesEquipment === "da" ? 1 : 2 },
+    color_mm21k4cw: { index: data.hasEnergyAudit === "da" ? 1 : 2 },
     text_mm21ntzy: data.turnover,
     numeric_mm21jt7w: data.employees,
     text_mm218bvt: data.address,
