@@ -106,3 +106,34 @@ details summary::-webkit-details-marker {
 .anim-pulse-1 { animation: pulse-travel 2s ease-in-out infinite; }
 .anim-pulse-2 { animation: pulse-travel 2s ease-in-out infinite 0.6s; }
 .anim-pulse-3 { animation: pulse-travel 2s ease-in-out infinite 1.2s; }
+
+/* ── Homepage illustration animations ── */
+@keyframes window-glow { 0%, 100% { opacity: 0.1; } 50% { opacity: 0.35; } }
+@keyframes smoke-home { 0% { opacity: 0.15; transform: translateY(0) scale(1); } 100% { opacity: 0; transform: translateY(-30px) scale(1.6); } }
+@keyframes crane-sway { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+@keyframes truck-drive { 0% { transform: translateX(0); } 100% { transform: translateX(-400px); } }
+@keyframes block-move { 0% { transform: translateX(0); opacity: 0.5; } 100% { transform: translateX(80px); opacity: 0; } }
+@keyframes bolt-flash { 0%, 100% { opacity: 0.5; } 30% { opacity: 1; } 60% { opacity: 0.3; } 80% { opacity: 0.9; } }
+@keyframes efficiency-spin { from { stroke-dashoffset: 0; } to { stroke-dashoffset: 20; } }
+@keyframes gear-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes gear-spin-r { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+@keyframes bar-pulse { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(1.4); } }
+
+.anim-window-1 { animation: window-glow 3s ease-in-out infinite; }
+.anim-window-2 { animation: window-glow 3s ease-in-out infinite 1.5s; }
+.anim-smoke-h1 { animation: smoke-home 4s ease-out infinite; }
+.anim-smoke-h2 { animation: smoke-home 5s ease-out infinite 1s; }
+.anim-smoke-h3 { animation: smoke-home 4.5s ease-out infinite 0.5s; }
+.anim-smoke-h4 { animation: smoke-home 5.5s ease-out infinite 1.5s; }
+.anim-crane-cable { animation: crane-sway 3s ease-in-out infinite; }
+.anim-crane-load { animation: crane-sway 3s ease-in-out infinite; }
+.anim-truck { animation: truck-drive 12s linear infinite; }
+.anim-block-1 { animation: block-move 4s linear infinite; }
+.anim-block-2 { animation: block-move 4s linear infinite 1.3s; }
+.anim-block-3 { animation: block-move 4s linear infinite 2.6s; }
+.anim-bolt { animation: bolt-flash 2s ease-in-out infinite; }
+.anim-efficiency { animation: efficiency-spin 4s linear infinite; }
+.anim-gear-1 { animation: gear-spin 6s linear infinite; }
+.anim-gear-2 { animation: gear-spin-r 4s linear infinite; }
+.anim-bar-1 { animation: bar-pulse 2s ease-in-out infinite; transform-origin: bottom; }
+.anim-bar-2 { animation: bar-pulse 2s ease-in-out infinite 0.7s; transform-origin: bottom; }

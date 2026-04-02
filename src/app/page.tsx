@@ -6,6 +6,7 @@ import { Stats } from "@/components/Stats";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { CTA } from "@/components/CTA";
 import { Authority } from "@/components/Authority";
+import { HomeIllustration } from "@/components/HomeIllustration";
 
 export default function HomePage() {
   return (
@@ -13,21 +14,36 @@ export default function HomePage() {
       <JsonLd data={generateHomePageJsonLd(domains)} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white py-24 md:py-32">
+      <section className="bg-gradient-to-br from-[#0a1628] to-[#1e3a5f] text-white py-20 md:py-28 overflow-hidden">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-xs font-bold text-blue-500 uppercase tracking-[3px] mb-3">Program PRO INFRA</p>
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight max-w-4xl mb-6">
-            Finantare <span className="text-blue-500">100% Nerambursabila</span> pentru Industria Materialelor de Constructii si Infrastructura
-          </h1>
-          <p className="text-lg text-slate-400 max-w-2xl mb-9">
-            Programul PRO INFRA ofera finantare 100% nerambursabila de pana la 15 milioane EUR per beneficiar, din Fondul pentru Modernizare, pentru modernizarea echipamentelor si cresterea eficientei energetice in 17 domenii de activitate eligibile.
-          </p>
-          <Link
-            href="#domenii"
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-10 py-4 rounded-md font-semibold transition-colors"
-          >
-            Vezi Domeniile Eligibile
-          </Link>
+          <div className="flex flex-col md:flex-row md:items-center md:gap-12">
+            <div className="md:flex-1">
+              <p className="text-xs font-bold text-blue-500 uppercase tracking-[3px] mb-3">Program PRO INFRA</p>
+              <h1 className="text-3xl md:text-5xl font-extrabold leading-tight max-w-3xl mb-6">
+                Finantare <span className="text-blue-500">100% Nerambursabila</span> pentru Industria Materialelor de Constructii si Infrastructura
+              </h1>
+              <p className="text-lg text-slate-400 max-w-2xl mb-9">
+                Programul PRO INFRA ofera finantare 100% nerambursabila de pana la 15 milioane EUR per beneficiar, din Fondul pentru Modernizare, pentru modernizarea echipamentelor si cresterea eficientei energetice in 17 domenii de activitate eligibile.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-10 py-4 rounded-md font-semibold transition-colors"
+                >
+                  Solicita Consultanta Gratuita
+                </Link>
+                <Link
+                  href="#domenii"
+                  className="inline-block border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-9 py-4 rounded-md font-semibold transition-colors"
+                >
+                  Vezi Domeniile Eligibile
+                </Link>
+              </div>
+            </div>
+            <div className="hidden md:flex md:items-center md:justify-center md:w-[420px] md:shrink-0">
+              <HomeIllustration />
+            </div>
+          </div>
         </div>
       </section>
 
