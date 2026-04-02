@@ -122,12 +122,15 @@ export function MultiStepForm() {
     setSubmitting(true);
     setSubmitError("");
 
-    const turnoverValue = latestFinancial
-      ? formatNumber(getIndicator(latestFinancial.indicators, "I13"))
-      : "N/A";
-    const employeesValue = latestFinancial
-      ? getIndicator(latestFinancial.indicators, "I20")
-      : 0;
+    const fi = latestFinancial?.indicators || [];
+    const turnover = getIndicator(fi, "I13");
+    const profit = getIndicator(fi, "I18");
+    const loss = getIndicator(fi, "I19");
+    const equity = getIndicator(fi, "I10");
+    const liabilities = getIndicator(fi, "I7");
+    const employees = getIndicator(fi, "I20");
+    const profitLoss = profit > 0 ? `+${formatNumber(profit)} RON` : loss > 0 ? `-${formatNumber(loss)} RON` : "0 RON";
+    const debtEquityRatio = equity > 0 ? (liabilities / equity).toFixed(2) : "N/A";
 
     try {
       const res = await fetch("/api/submit-lead", {
@@ -143,9 +146,23 @@ export function MultiStepForm() {
           caenEligible: isEligibleCaen === true,
           replacesEquipment,
           hasEnergyAudit,
+          hasConviction,
+          hasRecoveryDecision,
           address: company?.address || "",
-          turnover: turnoverValue + " RON",
-          employees: employeesValue,
+          turnover: formatNumber(turnover) + " RON",
+          employees,
+          registrationNumber: company?.registrationNumber || "",
+          registrationDate: company?.registrationDate || "",
+          legalForm: company?.legalForm || "",
+          vatRegistered: company?.vatRegistered ?? false,
+          inactive: company?.inactive ?? false,
+          administrators: (company?.administrators || []).map(a => `${a.name} (${a.role})`).join(", "),
+          profitLoss,
+          equity: formatNumber(equity) + " RON",
+          liabilities: formatNumber(liabilities) + " RON",
+          authorizedCaenCodes: (company?.authorizedCaenCodes || []).join(", "),
+          financialYear: latestFinancial?.year?.toString() || "N/A",
+          debtEquityRatio,
         }),
       });
 

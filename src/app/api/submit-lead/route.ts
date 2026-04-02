@@ -13,9 +13,23 @@ interface LeadData {
   caenEligible: boolean;
   replacesEquipment: string;
   hasEnergyAudit: string;
+  hasConviction: string;
+  hasRecoveryDecision: string;
   address: string;
   turnover: string;
   employees: number;
+  registrationNumber: string;
+  registrationDate: string;
+  legalForm: string;
+  vatRegistered: boolean;
+  inactive: boolean;
+  administrators: string;
+  profitLoss: string;
+  equity: string;
+  liabilities: string;
+  authorizedCaenCodes: string;
+  financialYear: string;
+  debtEquityRatio: string;
 }
 
 export async function POST(request: Request) {
@@ -39,6 +53,7 @@ export async function POST(request: Request) {
 
   // Status columns use index: 1=Done(green)=Da, 2=Stuck(red)=Nu
   const columnValues = JSON.stringify({
+    // Existing columns
     text_mm219a1p: data.cui,
     text_mm21580t: data.companyName,
     text_mm21mmps: data.caenCode,
@@ -50,6 +65,21 @@ export async function POST(request: Request) {
     text_mm21ntzy: data.turnover,
     numeric_mm21jt7w: data.employees,
     text_mm218bvt: data.address,
+    // New columns
+    text_mm21x2bg: data.registrationNumber,
+    date_mm21qb5: data.registrationDate ? { date: data.registrationDate } : null,
+    text_mm214epx: data.legalForm,
+    color_mm21bmaf: { index: data.vatRegistered ? 1 : 2 },
+    color_mm21p0w: { index: data.inactive ? 2 : 1 },
+    long_text_mm21cxtp: { text: data.administrators },
+    color_mm21kbya: { index: data.hasConviction === "nu" ? 1 : 2 },
+    color_mm2144c1: { index: data.hasRecoveryDecision === "nu" ? 1 : 2 },
+    text_mm21bbv4: data.profitLoss,
+    text_mm21rxge: data.equity,
+    text_mm21z2ks: data.liabilities,
+    long_text_mm21d73c: { text: data.authorizedCaenCodes },
+    text_mm21ej5n: data.financialYear,
+    text_mm214s1t: data.debtEquityRatio,
   });
 
   const mutation = `mutation {
