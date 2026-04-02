@@ -2,7 +2,7 @@ export function DomainIllustration({ slug }: { slug: string }) {
   const Illustration = illustrations[slug];
   if (!Illustration) return null;
   return (
-    <div className="w-full max-w-[340px] mx-auto lg:mx-0 opacity-80">
+    <div className="w-full max-w-[380px] opacity-90">
       <Illustration />
     </div>
   );
